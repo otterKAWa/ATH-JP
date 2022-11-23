@@ -1,0 +1,38 @@
+
+/* ///////////////////////// */
+
+.d-flex {
+    display: flex;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hide-sm {
+        display: none;
+    }
+
+    .d-block-sm { 
+        display: block;
+    }
+
+    .d-flex-sm {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hide {
+        display: none;
+    }
+
+    .d-none {
+        display: none;
+    }
+ 
+    .d-block {
+        display: block;
+    }
+
+
+}

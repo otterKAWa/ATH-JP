@@ -1,0 +1,430 @@
+.section0 {
+    width: 100%;
+    /* background-color: rgb(173, 173, 173); */
+    /* padding: 50px 0; */
+    margin-top: 150px;
+}
+
+
+.titlebox p {
+    font-size: 0.7em;
+    padding: 10px 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.section0 h2 {
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.section0 h3 {
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+
+/* 我是黑線框 */
+.box_wrap_active {
+    width: 90%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid black;
+    height: 1%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.absolute {
+    position: absolute;
+    /* display: none; */
+}
+
+.box_wrap_active img {
+    width: 100%;
+}
+
+
+.item_headphone {
+    width: 50%;
+    left: 25%;
+    top: 27%;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.item_headphone:hover {
+    top: 37%;
+}
+
+.item_microphone {
+    width: 45%;
+    left: 0;
+    top: 15%;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.item_microphone:hover {
+    top: 25%;
+}
+
+
+.item_earphone {
+    width: 38%;
+    left: 8%;
+    bottom: 8%;
+    z-index: 8;
+    transition: 0.5s;
+}
+
+.item_earphone:hover {
+    bottom: 0%;
+}
+
+/* before & after */
+
+.item_earphone::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #000;
+    width: 0;
+    height: 1px;
+    transform: rotate(45deg);
+}
+
+.item_analog {
+    width: 70%;
+    right: 0;
+    top: 40%;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.item_analog:hover {
+    top: 50%;
+}
+
+.item_AVaccessory {
+    width: 30%;
+    right: 0;
+    top: 20%;
+    z-index: 8;
+    transition: 0.5s;
+}
+
+.item_AVaccessory:hover {
+    top: 30%;
+}
+
+.item_car {
+    width: 35%;
+    right: 2%;
+    bottom: 5%;
+    z-index: 8;
+    transition: 0.5s;
+}
+
+.item_car:hover {
+    bottom: 0%;
+}
+
+/* 以下文字 */
+
+
+.item_headphone p {
+    position: absolute;
+    top: 0;
+    /* left: 50px; */
+
+}
+
+.item_headphone p {
+    position: absolute;
+    font-size: 0.8em;
+    top: 10%;
+    /* left: 22%; */
+}
+
+.item_microphone p {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 5%;
+    color: rgb(255, 255, 255);
+    /* left: 50px; */
+}
+
+.item_earphone p {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: -10%;
+    /* left: 50px; */
+}
+
+.item_analog p {
+    position: absolute;
+    font-size: 0.8em;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+}
+
+.item_AVaccessory p {
+    position: absolute;
+    font-size: 0.8em;
+    top: -45%;
+    left: -10%;
+
+    /* left: 50px; */
+}
+
+.item_car p {
+    position: absolute;
+    font-size: 0.7em;
+    top: 90%;
+    /* left: 50px; */
+    word-break: break-all;
+}
+
+
+.transform {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid red; */
+    transform: translate(-50%, -50%);
+    left: 80px;
+}
+
+/* --------------------------------- */
+
+@media screen and (min-width:768px) {
+
+    .section0 {
+        width: 100%;
+        margin-top: 150px;
+    }
+
+
+    .section0 .titlebox {
+        width: 50%;
+        text-align: center;
+        /* outline: 1px solid #000; */
+        line-height: 1.2em;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        z-index: 12;
+        transform: translate(-50%, -50%);
+    }
+
+    .titlebox h3 {
+        font-size: 20px;
+    }
+
+    .titlebox h2 {
+        font-size: 50px;
+        background-color: #fff;
+    }
+
+    .titlebox p {
+        font-size: 20px;
+        padding: 10px 0;
+        margin-top: 20px;
+        letter-spacing: 3px;
+    }
+
+    .section0 h2 {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    .section0 h3 {
+        font-size: 1em;
+        padding: 20px 0;
+    }
+
+
+    /* 我是黑線框 */
+    .box_wrap_active {
+        width: 80%;
+        height: 1100px;
+        position: relative;
+        /* background-color: rgb(176, 66, 66); */
+        border: 1px solid black;
+        margin: 0 auto;
+        
+    }
+
+    .effect {
+        width: 80%;
+        height: 100%;
+        /* background-color: rgb(93, 109, 191); */
+        position: relative;
+        margin: 0 auto;
+    }
+
+
+    .absolute {
+        position: absolute;
+        /* display: none; */
+    }
+
+    .box_wrap_active img {
+        width: 100%;
+    }
+
+
+    .item_headphone {
+        width: 37%;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        transition: 0.5s;
+    }
+
+    .item_headphone:hover {
+        top: 45%;
+    }
+
+    .item_microphone {
+        width: 28%;
+        left: 20%;
+        top: 37%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+        transition: 0.5s;
+    }
+
+    .item_microphone:hover {
+        top: 42%;
+    }
+
+    .item_earphone {
+        width: 23%;
+        left: 13%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        z-index: 8;
+        transition: 0.5s;
+    }
+
+    .item_earphone:hover {
+        top: 80%;
+    }
+
+    /* before & after */
+
+    .item_earphone::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        background: #000;
+        width: 0;
+        height: 1px;
+        transform: rotate(45deg);
+    }
+
+    .item_analog {
+        width: 42%;
+        left: 60%;
+        top: 72%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        transition: 0.5s;
+    }
+
+    .item_analog:hover {
+        top: 77%;
+    }
+
+    .item_AVaccessory {
+        width: 20%;
+        left: 85%;
+        top: 28%;
+        transform: translate(-50%, -50%);
+        z-index: 8;
+        transition: 0.5s;
+    }
+
+    .item_AVaccessory:hover {
+        top: 33%;
+    }
+
+    .item_car {
+        width: 22%;
+        left: 85%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        z-index: 8;
+        transition: 0.5s;
+    }
+
+    .item_car:hover {
+        top: 65%;
+    }
+
+    /* 以下文字 */
+
+
+
+    .item_headphone p {
+        position: absolute;
+        font-size: 25px;
+        top: 5%;
+        left: 15%;
+    }
+
+    .item_microphone p {
+        position: absolute;
+        font-size: 25px;
+        bottom: 5%;
+        color: rgb(255, 255, 255);
+        left: 50%;
+    }
+
+    .item_earphone p {
+        position: absolute;
+        font-size: 25px;
+        bottom: -60%;
+    }
+
+    .item_analog p {
+        position: absolute;
+        font-size: 25px;
+        top: 85%;
+        left: 3%;
+        color: #fff;
+    }
+
+    .item_AVaccessory p {
+        position: absolute;
+        font-size: 25px;
+        top: -25%;
+        left: 45%;
+        
+    }
+
+    .item_car p {
+        position: absolute;
+        font-size: 25px;
+        top: 100%;
+        left: 0%;
+        word-break: break-all;
+    }
+
+    .transform {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid red; */
+        transform: translate(-50%, -50%);
+        left: 400px;
+        bottom: -1200px;
+
+    }
+}
